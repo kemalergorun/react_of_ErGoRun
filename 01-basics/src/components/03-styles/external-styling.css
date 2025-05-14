@@ -1,0 +1,16 @@
+.external-styling-container{
+    padding: 1rem;
+    border: 1px solid navy;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.external-styling-header{
+    text-align: center;
+    color: navy;
+}
+
+.external-styling-paragraph{
+    font-style: italic;
+}

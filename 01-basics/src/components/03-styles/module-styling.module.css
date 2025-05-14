@@ -1,0 +1,21 @@
+.container{
+    border: 1px solid salmon;
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.header{
+    text-align: center;
+    color: salmon;
+}
+
+.italic{
+    font-style: italic;
+}
+
+
+
+
+

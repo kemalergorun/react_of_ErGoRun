@@ -1,0 +1,20 @@
+$clr1: indigo;
+
+.sass-styling-container{
+    border: 1px solid $clr1;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: justify;
+
+    #heading{
+        color: $clr1;
+        text-align: center;
+    }
+
+    p{
+        &:nth-child(2){
+            font-style: italic;
+        }
+    }
+}
