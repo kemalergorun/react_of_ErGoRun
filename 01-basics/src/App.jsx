@@ -1,6 +1,18 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import DigitalClock1 from "./components/04-digital-clock-1/DigitalClock1";
+import ProfileCard from "./components/08-profile-card/ProfileCard";
+
+// import Images from "./components/07-images/Images";
+
+// import ChildComponent from "./components/05-props/ChildComponent";
+// import ParentComponent from "./components/05-props/ParentComponent";
+// import DigitalClock2 from "./components/digital-clock-2/DigitalClock2";
+
+// import CardContainer from "./components/05-props/CardContainer";
+
+// import DataBeReceived from "./components/05-props/DataBeReceived";
+
+// import DigitalClock1 from "./components/04-digital-clock-1/DigitalClock1";
 
 // import ExternalStyling from "./components/03-styles/ExternalStyling";
 // import InlineStyling from "./components/03-styles/InlineStyling";
@@ -38,7 +50,22 @@ export default function App() {
       <ModuleStyling />
       <ScssStyling />
       <ScssModuleStyling /> */}
-      <DigitalClock1 />
+      {/* <DigitalClock1 /> */}
+      {/* <DataBeReceived firstName="John" lastName="Doe" /> */}
+      {/* <CardContainer /> */}
+      {/* 
+      <ParentComponent>
+        <ChildComponent />
+        <p>Lorem ipsum dolor sit amet.</p>
+      </ParentComponent> */}
+
+      {/* <DigitalClock2 bgColor="crimson" textColor="pink" />
+      <DigitalClock2 bgColor="darkblue" textColor="salmon" />
+      <DigitalClock2 bgColor="darkgreen" textColor="blueviolet" /> */}
+
+      {/* <Images /> */}
+
+      <ProfileCard />
     </div>
   );
 }
