@@ -1,6 +1,11 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import ProfileCard from "./components/08-profile-card/ProfileCard";
+import ReactBootstrap from "./components/09-bootstrap/ReactBootstrap";
+import VanillaBootstrap from "./components/09-bootstrap/VanillaBootstrap";
+
+// import ProfileCard from "./components/08-profile-card/ProfileCard";
+
+// import profileData from "./assets/data/profile-card.json";
 
 // import Images from "./components/07-images/Images";
 
@@ -65,7 +70,33 @@ export default function App() {
 
       {/* <Images /> */}
 
-      <ProfileCard />
+      {/* <ProfileCard
+        name="Walker"
+        location="Nashville, Tennessee"
+        imgSrc=""
+        shot="2"
+        followers="234"
+        following="327"
+      />
+
+      <ProfileCard
+        name="Annabelle"
+        location="Berlin, Germany"
+        imgSrc="/profile.jpg"
+        shot="5"
+        followers="100"
+        following="200"
+      />
+
+      <ProfileCard
+        {...profileData}
+        shot={profileData.statistics[0].value}
+        followers={profileData.statistics[1].value}
+        following={profileData.statistics[2].value}
+      /> */}
+
+      {/* <VanillaBootstrap /> */}
+      <ReactBootstrap />
     </div>
   );
 }

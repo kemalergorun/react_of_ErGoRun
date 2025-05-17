@@ -1,9 +1,11 @@
 import profileCardStyles from "./profile-card.module.scss";
 import profileCardImg from "../../assets/images/profile-card.jpg";
 
-export default function ProfileCard() {
+export default function ProfileCard(props) {
+  console.log(props);
+
   const backgroundStyle = {
-    backgroundImage: `url(${profileCardImg})`,
+    backgroundImage: `url(${props.imgSrc || profileCardImg})`,
   };
   return (
     <div className={profileCardStyles.profileCardContainer}>
@@ -13,21 +15,19 @@ export default function ProfileCard() {
       ></div>
       <div className={profileCardStyles.cardBody}>
         <div className={profileCardStyles.avatar} style={backgroundStyle}></div>
-        <h3 className={profileCardStyles.cardTitle}> Walker </h3>
-        <h5 className={profileCardStyles.cardDescription}>
-          Nashville, Tennessee
-        </h5>
+        <h3 className={profileCardStyles.cardTitle}> {props.name} </h3>
+        <h5 className={profileCardStyles.cardDescription}>{props.location}</h5>
         <div className={profileCardStyles.stats}>
           <div className={profileCardStyles.statisticsInfo}>
-            <p>2</p>
+            <p>{props.shot}</p>
             <p>Shot</p>
           </div>
           <div className={profileCardStyles.statisticsInfo}>
-            <p>234</p>
+            <p>{props.followers}</p>
             <p>Followers</p>
           </div>
           <div className={profileCardStyles.statisticsInfo}>
-            <p>327</p>
+            <p>{props.following}</p>
             <p>Following</p>
           </div>
         </div>

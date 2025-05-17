@@ -1,0 +1,19 @@
+{
+  "name": "Jason",
+  "location": "Istanbul, Turkey",
+  "imgUrl": "",
+  "statistics": [
+    {
+      "label": "Shot",
+      "value": "8"
+    },
+    {
+      "label": "Followers",
+      "value": "1049"
+    },
+    {
+      "label": "Following",
+      "value": "500"
+    }
+  ]
+}
