@@ -1,7 +1,9 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import ReactBootstrap from "./components/09-bootstrap/ReactBootstrap";
-import VanillaBootstrap from "./components/09-bootstrap/VanillaBootstrap";
+import ReactIcons from "./components/10-icon-libraries/ReactIcons";
+
+// import ReactBootstrap from "./components/09-bootstrap/ReactBootstrap";
+// import VanillaBootstrap from "./components/09-bootstrap/VanillaBootstrap";
 
 // import ProfileCard from "./components/08-profile-card/ProfileCard";
 
@@ -96,7 +98,9 @@ export default function App() {
       /> */}
 
       {/* <VanillaBootstrap /> */}
-      <ReactBootstrap />
+      {/* <ReactBootstrap /> */}
+
+      <ReactIcons />
     </div>
   );
 }
