@@ -1,6 +1,10 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import ReactIcons from "./components/10-icon-libraries/ReactIcons";
+import Hooks from "./components/12-hooks/Hooks";
+
+// import Events from "./components/11-events/Events";
+
+// import ReactIcons from "./components/10-icon-libraries/ReactIcons";
 
 // import ReactBootstrap from "./components/09-bootstrap/ReactBootstrap";
 // import VanillaBootstrap from "./components/09-bootstrap/VanillaBootstrap";
@@ -100,7 +104,9 @@ export default function App() {
       {/* <VanillaBootstrap /> */}
       {/* <ReactBootstrap /> */}
 
-      <ReactIcons />
+      {/* <ReactIcons /> */}
+      {/* <Events /> */}
+      <Hooks />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import {
 import { FaBorderNone } from "react-icons/fa";
 import { BorderNoneIcon } from "@radix-ui/react-icons";
 import AirlineSeatIndividualSuiteIcon from "@mui/icons-material/AirlineSeatIndividualSuite";
+import { CgAdidas } from "react-icons/cg";
 
 export default function ReactIcons() {
   return (
@@ -29,6 +30,17 @@ export default function ReactIcons() {
           title="Creative Commons"
         />
         <FaBorderNone size="5rem" />
+
+        <CgAdidas
+          size="5rem"
+          color="darkred"
+          cursor="pointer"
+          title="Adidas"
+          className="text-dark"
+          style={{
+            backgroundColor: "red",
+          }}
+        />
 
         {/* RADIX ICONS */}
         <BorderNoneIcon width="5rem" height="5rem" color="mediumspringgreen" />
