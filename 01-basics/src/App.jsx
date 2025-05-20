@@ -1,6 +1,8 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import Hooks from "./components/12-hooks/Hooks";
+import Counter1 from "./components/13-counter-1/Counter1";
+
+// import Hooks from "./components/12-hooks/Hooks";
 
 // import Events from "./components/11-events/Events";
 
@@ -106,7 +108,8 @@ export default function App() {
 
       {/* <ReactIcons /> */}
       {/* <Events /> */}
-      <Hooks />
+      {/* <Hooks /> */}
+      <Counter1 />
     </div>
   );
 }
