@@ -1,6 +1,14 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import Counter1 from "./components/13-counter-1/Counter1";
+import DigitalClock3 from "./components/16-digital-clock-3/DigitalClock3";
+
+// import Counter2 from "./components/15-counter-2/Counter2";
+
+// import { useState } from "react";
+// import UseEffect from "./components/14-use-effect/UseEffect";
+// import Button from "react-bootstrap/esm/Button";
+
+// import Counter1 from "./components/13-counter-1/Counter1";
 
 // import Hooks from "./components/12-hooks/Hooks";
 
@@ -41,6 +49,8 @@ import Counter1 from "./components/13-counter-1/Counter1";
 // import Jsx1 from "./components/02-jsx/Jsx1";
 
 export default function App() {
+  // const [isShow, setIsShow] = useState(true);
+
   return (
     <div id="app">
       <h1
@@ -109,7 +119,18 @@ export default function App() {
       {/* <ReactIcons /> */}
       {/* <Events /> */}
       {/* <Hooks /> */}
-      <Counter1 />
+      {/* <Counter1 /> */}
+      {/* <Button
+        className="my-5 w-50 mx-auto d-block"
+        onClick={() => setIsShow((prev) => !prev)}
+      >
+        {isShow ? "Unmount Component" : "Mount Component"}
+      </Button>
+      {isShow && <UseEffect />} */}
+
+      {/* <Counter2 /> */}
+
+      <DigitalClock3 />
     </div>
   );
 }
