@@ -1,6 +1,9 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
 import DigitalClock3 from "./components/16-digital-clock-3/DigitalClock3";
+import UseRef from "./components/17-use-ref/UseRef";
+import ClassTypeComponent from "./components/18-component-types/ClassTypeComponent";
+import FunctionTypeComponent from "./components/18-component-types/FunctionTypeComponent";
 
 // import Counter2 from "./components/15-counter-2/Counter2";
 
@@ -130,7 +133,10 @@ export default function App() {
 
       {/* <Counter2 /> */}
 
-      <DigitalClock3 />
+      {/* <DigitalClock3 /> */}
+      {/* <UseRef /> */}
+      <FunctionTypeComponent />
+      <ClassTypeComponent />
     </div>
   );
 }
