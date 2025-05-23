@@ -1,0 +1,45 @@
+✅ JavaScript & React Interview Questions (Mid-Level)
+What are the differences between var, let, and const?
+
+How do you use Promises in JavaScript?
+
+How does async/await work with Promises, and how do you handle errors using try/catch?
+
+Can you explain the JavaScript event loop and how it works?
+
+What is React?
+
+How does React's rendering and Virtual DOM work internally?
+
+What does the term "Syntactic Sugar" mean in JavaScript? Can you give examples?
+
+What is the difference between state and props in React?
+
+What are the differences between class components and functional components in React?
+
+What are React Hooks and how do they work?
+
+How do you use the useEffect hook? What are some common use cases?
+
+What is useMemo and when should you use it?
+
+What are lifecycle methods in class components, and what are their functional equivalents?
+
+What are the common strategies for state management in React?
+
+How does useReducer work and when would you use it over useState?
+
+What is the difference between Context API and Redux? When would you use each?
+
+Can you describe some common design patterns used in React applications?
+
+
+
+
+
+
+
+
+
+
+

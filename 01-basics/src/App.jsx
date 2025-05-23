@@ -4,6 +4,8 @@ import DigitalClock3 from "./components/16-digital-clock-3/DigitalClock3";
 import UseRef from "./components/17-use-ref/UseRef";
 import ClassTypeComponent from "./components/18-component-types/ClassTypeComponent";
 import FunctionTypeComponent from "./components/18-component-types/FunctionTypeComponent";
+import FetchCountries from "./components/19-fetching-data/FetchCountries";
+import FetchingData from "./components/19-fetching-data/FetchingData";
 
 // import Counter2 from "./components/15-counter-2/Counter2";
 
@@ -135,8 +137,10 @@ export default function App() {
 
       {/* <DigitalClock3 /> */}
       {/* <UseRef /> */}
-      <FunctionTypeComponent />
-      <ClassTypeComponent />
+      {/* <FunctionTypeComponent hello="hell1o" /> */}
+      {/* <ClassTypeComponent hello="hello1" /> */}
+      {/* <FetchingData /> */}
+      <FetchCountries />
     </div>
   );
 }
