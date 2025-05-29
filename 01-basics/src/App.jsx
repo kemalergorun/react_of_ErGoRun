@@ -1,6 +1,8 @@
 // import MyComponent, { MyComponent2 } from "./components/01-my-component/MyComponent";
 
-import FormikYup1 from "./components/22-formik-yup/FormikYup1";
+import FormikYup2 from "./components/22-formik-yup/FormikYup2";
+
+// import FormikYup1 from "./components/22-formik-yup/FormikYup1";
 
 // import FormValidationManually from "./components/21-forms/FormValidationManually";
 
@@ -158,7 +160,8 @@ export default function App() {
       {/* <Form2 /> */}
       {/* <Form3 /> */}
       {/* <FormValidationManually /> */}
-      <FormikYup1 />
+      {/* <FormikYup1 /> */}
+      <FormikYup2 />
     </div>
   );
 }
