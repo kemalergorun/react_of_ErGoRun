@@ -7,6 +7,7 @@ import { createContactAction } from "../actions/create-contact.action";
 import { contactLoader } from "../api/ContactLoader";
 import EditContact from "./EditContact";
 import { updateContactAction } from "../actions/update-contact.action";
+import { destroyContactAction } from "../actions/destroy-contact.action";
 
 // createBrowserRouter acts like App.jsx
 export const router = createBrowserRouter([
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
     action: createContactAction,
     children: [
       {
+        index: true,
+        element: <>This is a home page</>,
+      },
+      {
         path: "/contacts/:contactId",
         element: <Contact />,
         loader: contactLoader,
@@ -31,6 +36,10 @@ export const router = createBrowserRouter([
         element: <EditContact />,
         loader: contactLoader,
         action: updateContactAction,
+      },
+      {
+        path: "/contacts/:contactId/destroy",
+        action: destroyContactAction,
       },
     ],
   },

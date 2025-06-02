@@ -7,19 +7,19 @@ export default function Contact() {
     <div id="contact">
       <div>
         <img
-          key={contact.avatar}
+          key={contact?.avatar}
           src={
-            contact.avatar ||
-            `https://robohash.org/${contact.id}.png?size=200x200`
+            contact?.avatar ||
+            `https://robohash.org/${contact?.id}.png?size=200x200`
           }
         />
       </div>
 
       <div>
         <h1>
-          {contact.first || contact.last ? (
+          {contact?.first || contact?.last ? (
             <>
-              {contact.first} {contact.last}
+              {contact?.first} {contact?.last}
             </>
           ) : (
             <i>No Name</i>
@@ -27,15 +27,15 @@ export default function Contact() {
           <Favorite contact={contact} />
         </h1>
 
-        {contact.twitter && (
+        {contact?.twitter && (
           <p>
-            <a target="_blank" href={`https://twitter.com/${contact.twitter}`}>
-              {contact.twitter}
+            <a target="_blank" href={`https://twitter.com/${contact?.twitter}`}>
+              {contact?.twitter}
             </a>
           </p>
         )}
 
-        {contact.notes && <p>{contact.notes}</p>}
+        {contact?.notes && <p>{contact?.notes}</p>}
 
         <div>
           <Form action="edit">
@@ -59,7 +59,7 @@ export default function Contact() {
 }
 
 function Favorite({ contact }) {
-  const favorite = contact.favorite;
+  const favorite = contact?.favorite;
   return (
     <Form method="post">
       <button

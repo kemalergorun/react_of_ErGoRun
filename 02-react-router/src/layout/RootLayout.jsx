@@ -1,18 +1,23 @@
 import {
   Form,
-  Link,
   NavLink,
   Outlet,
   useLoaderData,
-  useParams,
+  useNavigation,
 } from "react-router";
 
 export default function RootLayout() {
   const { contacts } = useLoaderData();
+  const navigation = useNavigation();
+  console.log(navigation);
+
   // console.log(contacts);
 
-  // TODO Explain on Monday
+  // If we would not use NavLink, we have to find the id from route and match this id from the fetched data and only if it is matching we need to give active className which is more difficult than using NavLink:
   // const conId = useParams();
+  // console.log(conId.contactId);
+  // const selectedContact = contacts.find((contact, index) => contact.id === conId.contactId);
+  // console.log(selectedContact);
 
   return (
     <>
@@ -64,7 +69,10 @@ export default function RootLayout() {
           )}
         </nav>
       </div>
-      <div id="detail">
+      <div
+        id="detail"
+        className={navigation?.state === "loading" ? "loading" : ""}
+      >
         <Outlet />
       </div>
     </>
