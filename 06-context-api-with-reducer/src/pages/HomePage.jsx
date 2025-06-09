@@ -5,8 +5,9 @@ import Alert from "react-bootstrap/Alert";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import { useReducer } from "react";
+import { useContext, useReducer } from "react";
 import { NavLink } from "react-router";
+import { AuthContext, types } from "../store/auth-store";
 
 // Initial State to send inside the useReducer hook
 const initialState = {
@@ -36,6 +37,19 @@ function reducer(state, action) {
 }
 
 export default function HomePage() {
+  // AUTH ====================================
+
+  const centralState = useContext(AuthContext);
+  const { state: authState, dispatch: authDispatch } = centralState;
+
+  console.log(authDispatch, authState);
+
+  const handleLogout = () => {
+    authDispatch({ type: types.LOGOUT });
+  };
+
+  // =========================================
+
   // useReducer hook receives two arguments: first argument is the reducer function, and the second argument is the initial state
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -52,11 +66,21 @@ export default function HomePage() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand>Hello</Navbar.Brand>
+          <Navbar.Brand>
+            {authState.isAuthenticated
+              ? `Welcome Back ${authState?.user?.username}`
+              : "Welcome Stranger"}
+          </Navbar.Brand>
           <Nav>
-            <Nav.Link as={NavLink} to="/login">
-              Login
-            </Nav.Link>
+            {authState.isAuthenticated ? (
+              <Button type="button" variant="danger" onClick={handleLogout}>
+                Logout
+              </Button>
+            ) : (
+              <Nav.Link as={NavLink} to="/login">
+                Login
+              </Nav.Link>
+            )}
           </Nav>
         </Container>
       </Navbar>
